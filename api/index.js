@@ -12,6 +12,11 @@ const app = express();
 const PORT = process.env.PORT || 8800;
 dotenv.config();
 
+app.use(cors(
+  {
+    origin: ['https://bookingappclient-q088.onrender.com/']
+  }))
+
 const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO);
