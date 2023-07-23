@@ -1,0 +1,1 @@
+export const BASE_URL = "https://bookingapp-a6b1.onrender.com"
